@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px){
+    body {
+        max-width: 768px;
+    }
+    .tablet {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}

@@ -1,0 +1,182 @@
+<html>
+<head>
+    <title>SEDONA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="top-menu">
+        <ul class="menu-main">
+            <li><a href="">ГЛАВНАЯ</a></li>
+            <li><a href="">ФОТО И ВИДЕО</a></li>
+            <li><img class="desktop" src="logotype-desktop.svg"><img class="tablet" src="logotype-tablet.svg"></li>
+            <li><a href="">ФОРМА ОТЗЫВА</a></li>
+            <li><a href="">HTML ACADEMY</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="mountain">
+    <img src="text-sedona.svg">
+    <img src="intro-triangle.svg">
+</section>
+<form method="post" action="input1.php">
+    <section class="feedback">
+        <div class="feedback-title">
+            ОСТАВЬТЕ СВОЙ ОТЗЫВ
+        </div>
+        <div class="feedback-description">
+            ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
+        </div>
+        <div class="feedback-columns">
+            <div class="left-column">
+                <div class="form">
+                    <p>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ</p>
+                    <div class="column-impression">
+                        <div>
+                            <input type="checkbox" id="positive" name="positive" value="positive" checked>
+                            <label class="label-checkbox" for="positive"></label>
+                        </div>
+                        <div>Скорее положительное</div>
+                    </div>
+                    <div class="column-impression">
+                        <div>
+                            <input type="checkbox" id="negative" name="negative" value="negative">
+                            <label class="label-checkbox" for="negative"></label>
+                        </div>
+                        <div>Скорее отрицательное</div>
+                    </div>
+                    <div class="column-impression">
+                        <div>
+                            <input type="checkbox" id="indefinitely" name="indefinitely" value="indefinitely">
+                            <label class="label-checkbox" for="indefinitely"></label>
+                        </div>
+                        <div>Затрудняюсь ответить</div>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="right-column">
+                <div class="form">
+                    <p>ПРЕДСТАВЬТЕСЬ:</p>
+                    <div class="column-name">
+                        <div class="col1" width="100%">ИМЯ*:</div>
+                        <div class="col2">
+                            <input type="text" name="first-name" size="40" required placeholder="Петр">
+                        </div>
+                    </div>
+                    <div class="column-name">
+                        <div class="col1">ФАМИЛИЯ*:</div>
+                        <div class="col2">
+                            <input type="text" name="last-name" size="40" required placeholder="Иванов">
+                        </div>
+                    </div>
+                    <div class="column-name">
+                        <div class="col1">ОТЧЕСТВО:</div>
+                        <div class="col2"><input type="text" name="middle-name" size="40" placeholder="Александрович">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-information">
+        <div class="contact-information-title">
+            <div class="line"></div>
+            <div class="title">контактная информация:</div>
+            <div class="line"></div>
+        </div>
+        <div class="contact-information-form">
+            <div class="form">
+                <div class="phone">
+                    <div>телефон*:</div>
+                    <div>
+                        <input type="tel" name="phone" size="40" required placeholder="Введите телефон">
+                        <img src="phone.svg">
+                    </div>
+                </div>
+                <div class="email">
+                    <div>электронная почта*:</div>
+                    <div>
+                        <input type="email" name="email" size="40" required placeholder="Введите e-mail">
+                        <img src="mail.svg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="attractions">
+        <div class="attractions-title">
+            <div class="line"></div>
+            <div class="title">посещенные достопримечательности:</div>
+            <div class="line"></div>
+        </div>
+        <div class="form">
+            <div class="places">
+                <div>
+                    <input type="checkbox" id="place1" name="place1" value="place1" checked>
+                    <label class="label-checkbox" for="place1"></label>
+                </div>
+                <div>Мост дьявола</div>
+            </div>
+            <div class="places">
+                <div>
+                    <input type="checkbox" id="place2" name="place2" value="place2" checked>
+                    <label class="label-checkbox" for="place2"></label>
+                </div>
+                <div>Гора-колокол</div>
+            </div>
+            <div class="places">
+                <div>
+                    <input type="checkbox" id="place3" name="place3" value="place3" checked>
+                    <label class="label-checkbox" for="place3"></label>
+                </div>
+                <div>Слайд-парк</div>
+            </div>
+            <div class="places">
+                <div>
+                    <input type="checkbox" id="place4" name="place4" value="place4">
+                    <label class="label-checkbox" for="place4"></label>
+                </div>
+                <div>Красные скалы</div>
+            </div>
+        </div>
+    </section>
+    <section class="emotions">
+        <div class="emotions-title">
+            <div class="line"></div>
+            <div class="title">опишите свои эмоции:</div>
+            <div class="line"></div>
+        </div>
+        <textarea>Опишите подробно все свои восторги</textarea>
+        <div class="submit">
+            <input type="submit" value="Отправить отзыв">
+            <div>
+                * — обязательные поля
+            </div>
+        </div>
+    </section>
+</form>
+<footer>
+    <div class="hashtag">
+        #visitSEDONA
+    </div>
+    <div class="social">
+        <img src="icon-twitter.svg">
+        <img src="icon-facebook.svg">
+        <img src="icon-youtube.svg">
+    </div>
+    <div class="developed">
+        <div>
+            разработано
+        </div>
+        <img src="htmlacademy.svg">
+    </div>
+</footer>
+</body>
+</html>
